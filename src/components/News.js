@@ -9,7 +9,7 @@ export class News extends Component {
 
                 <div className="row">
                     <div className="col-md-4">
-                        <NewsItem title="myTitle" description="mydesc"/>
+                        <NewsItem title="myTitle" description="mydesc" imageUrl="https://a4.espncdn.com/combiner/i?img=%2Fi%2Fcricket%2Fcricinfo%2F1219926_1296x729.jpg"/>
                     </div>
                     <div className="col-md-4">
                         <NewsItem title="myTitle" description="mydesc"/>
