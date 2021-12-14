@@ -24,7 +24,6 @@ export class Navbar extends Component {
                                 <a className="nav-link" href="/about">About</a>
                                 </li>
                             </ul>
-                        
                         </div>
                     </div>
                 </nav>
