@@ -5,7 +5,7 @@ const NewsItem = (props) => {
         let { title, description, imageUrl, newsurl, author, date, source } = props;
         return (
             <div>
-                <div className="card">
+                <div className="card my-3">
                     <div style={{
                         display: 'flex',
                         justifyContent: 'flex-end',

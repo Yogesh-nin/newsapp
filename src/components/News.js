@@ -45,10 +45,10 @@ const News = (props) => {
 
 
     const fetchMoreData = async () =>{
-        setPage(page+1)
         
         props.setProgress(10);
-        const url = `https://newsapi.org/v2/top-headlines?country=${props.country}&category=${props.category}&apiKey=${props.apiKey}&page=${page}&pageSize=${props.pageSize}`;
+        const url = `https://newsapi.org/v2/top-headlines?country=${props.country}&category=${props.category}&apiKey=${props.apiKey}&page=${page+1}&pageSize=${props.pageSize}`;
+        setPage(page+1)
         let data = await fetch(url);
         props.setProgress(30);
         let parsedData = await data.json()
@@ -61,7 +61,7 @@ const News = (props) => {
 
         return (
             <>
-                <h1 className="text-center" style={{margin: '35px 0px'}}>NewsMonkey - {capitalizefirstLetter(props.category)} top headlines</h1>
+                <h1 className="text-center" style={{margin: '35x 0px', marginTop: '90px'}}>NewsMonkey - {capitalizefirstLetter(props.category)} top headlines</h1>
                     {loading && <Spinner/>}
                     <InfiniteScroll
                         dataLength={articles.length}
