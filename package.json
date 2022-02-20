@@ -13,6 +13,7 @@
     "react-router-dom": "^6.2.1",
     "react-scripts": "4.0.3",
     "react-top-loading-bar": "^2.1.0",
+    "url-parse": "^1.5.9",
     "web-vitals": "^1.1.2"
   },
   "scripts": {
